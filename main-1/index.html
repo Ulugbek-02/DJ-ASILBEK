@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu_side">
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i> Playlist</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i> Last Listening</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i> Recommended</h4>
+            </div>
+            <div class="menu_song">
+                <li class="songItem1">
+                    <span>01</span>
+                    <img src="img/1.jpg" alt="Xamdam Sobirov Jagira">
+                    <h5>
+                        Jagira (Remix by DJ Asilbek)
+                        <div class="subtitle">Xamdam Sobirov</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                </li>
+                <li class="songItem1">
+                    <span>02</span>
+                    <img src="img/xamdamJanze.jpg" alt="Xamdam Sobirov Janze">
+                    <h5>
+                        Janze (Remix by DJ Asilbek)
+                        <div class="subtitle">Xamdam Sobirov</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                </li>
+                <li class="songItem1">
+                    <span>03</span>
+                    <img src="img/mirjalol.jpg" alt="Mirjalol Ne'matov Sevarami Madina">
+                    <h5>
+                        Sevarami Madina (DJ Asilbek)
+                        <div class="subtitle">Mirjalol Ne'matov</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                </li>
+                <li class="songItem1">
+                    <span>04</span>
+                    <img src="img/xamdam-gulinurYaraladi.jpg" alt="Xamdam Sobirov Gulinur Yuragimni Yaraladi">
+                    <h5>
+                        Yuragimni yaraladi (Remix by DJ Asilbek)
+                        <div class="subtitle">Xamdam Sobirov va Gulinur</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                </li>
+                <li class="songItem1">
+                    <span>05</span>
+                    <img src="img/mirjalolEndiMangaGitara" alt="Mirjalol Ne'matov Endi Manga Gitara">
+                    <h5>
+                        Gitara (Remix by DJ Asilbek)
+                        <div class="subtitle">Mirjalol Ne'matov</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+                </li>
+                <li class="songItem1">
+                    <span>06</span>
+                    <img src="img/mirjalolQolimdaRubob.jpg" alt="Mirjalol Ne'matov Qolimda Rubob">
+                    <h5>
+                        Qo'limda rubob (Remix by DJ Asilbek)
+                        <div class="subtitle">Mirjalol Ne'matov</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+                </li>
+            </div>
+        </div>
+        <div class="song_side" id="song_side">
+            <nav>
+                <ul>
+                    <li id="discover">Discover <span id="arrow"></span></li>
+                    <li id="alboms">Alboms</li>
+                    <li id="all">All</li>
+                </ul>
+                <div class="search">
+                    <button id="searchBtn" style="background: none; height: 2.5em; border: none; width: 3em; position: relative; top: .2em;" ><i class="bi bi-search"></i></button>
+                    <input type="text" placeholder="Search Music..."  id="search">
+                </div>
+                <div class="user">
+                    <img src="djA.jpg" alt="User" title="KDS CODER(Ulugbek)">
+                </div>
+            </nav>
+            <div class="content">
+                <h1>DJ ASILBEK REMIX</h1>
+                <p>You can listen to the latest and best remix music through this site <br>
+                 We hope you will like these remixes and subscribe to our telegram channel</p>
+                 <div class="buttons">
+                    <a href="https://t.me/DJ_ASILBEK_KING"><button>PLAY</button></a>
+                    <a href="https://t.me/DJ_ASILBEK_REMIX"><button id="follow">FOLLOW</button></a>
+                </div>
+            </div>
+            <div class="popular_song">
+                <div class="h4">
+                    <h4 id="text">Popular Song</h4>
+                    <div class="btn_s">
+                        <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+                        <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <div class="pop_song" id="pop_song">
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jaloliddinTo'yingizgaBormayman.jpg" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                        </div>
+                        <h5>
+                            To'yingizga bormayman
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jaloliddin" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+                        </div>
+                        <h5>
+                            Menda qolmadi dil 
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jal" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                        </div>
+                        <h5>
+                            Bevafo dil
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/uzmirMira.jpg" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                        </div>
+                        <h5>
+                            Qishlog'imda
+                            <br>
+                            <div class="subtitle">Uzmir Mira</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/axrorBaxshi.jpg" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                        </div>
+                        <h5>
+                            Musofirda yurgan akalar
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/osmanQolmadiChoram.jpg" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                        </div>
+                        <h5>
+                            Qolmadi choram
+                            <br>
+                            <div class="subtitle">Osman Navruzov</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jasurMirzajon.png" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+                        </div>
+                        <h5>
+                            Tabibim
+                            <br>
+                            <div class="subtitle">Muhammadziyo</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jaloliddin" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+                        </div>
+                        <h5>
+                            Yashayabman
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jaloliddin" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+                        </div>
+                        <h5>
+                            Yashayabman
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jaloliddin" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
+                        </div>
+                        <h5>
+                            Yashayabman
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jaloliddin" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
+                        </div>
+                        <h5>
+                            Yashayabman
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jaloliddin" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
+                        </div>
+                        <h5>
+                            Yashayabman
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jaloliddin" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="19"></i>
+                        </div>
+                        <h5>
+                            Yashayabman
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                </div> 
+                
+                 <div class="pop_song pop_song2" id="pop_song2">
+                    <a href="https://t.me/DJ_ASILBEK_REMIX" style="text-decoration: none;"><button class="follow allFollow"><span style="position: relative; left: -1em;"><i class="bi bi-telegram"></i></span>DJ ASILBEK REMIX</button></a>
+                    <div class="p">
+                        <p>Barcha remix musiqalar DJ ASILBEK REMIX kanalida obuna bo'ling !!!</p>
+                    </div>
+                </div>
+                <h4 id="text1">Jaloliddin Ahmadaliyev</h4>
+                <div class="pop_song pop_song3" id="pop_song3"> 
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/7.jpg" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                        </div>
+                        <h5>
+                            To'yingizga bormayman
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/8.jpg" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="21"></i>
+                        </div>
+                        <h5>
+                            Menda qolmadi dil 
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/9.jpg" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="22"></i>
+                        </div>
+                        <h5>
+                            Bevafo dil
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/15.jpg" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="23"></i>
+                        </div>
+                        <h5>
+                            Yashayabman
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                </div> 
+                
+                <h4 id="text2">Xamdam Sobirov</h4>
+                <div class="pop_song pop_song3" id="pop_song4">
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jaloliddinTo'yingizgaBormayman.jpg" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>
+                            To'yingizga bormayman
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jaloliddin" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                        </div>
+                        <h5>
+                            Menda qolmadi dil 
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jal" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                        </div>
+                        <h5>
+                            Bevafo dil
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jaloliddin" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
+                        </div>
+                        <h5>
+                            Yashayabman
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jaloliddin" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                        </div>
+                        <h5>
+                            Yashayabman
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jaloliddin" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="21"></i>
+                        </div>
+                        <h5>
+                            Yashayabman
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                    <li class="songItem1">
+                        <div class="img_play">
+                            <img src="img/jaloliddin" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="22"></i>
+                        </div>
+                        <h5>
+                            Yashayabman
+                            <br>
+                            <div class="subtitle">Jaloliddin Ahmadaliyev</div>
+                        </h5>
+                    </li>
+                </div> 
+            </div>
+            <div class="bg">
+                <div class="boxShadow"></div>
+                <img class="img-bg" src="bg.png" alt="">
+            </div>
+            <div class="popular_artists">
+                <div class="h4">
+                    <h4>Popular Artists</h4>
+                    <div class="btn_s">
+                        <i id="left_scrolls" id="left_scroll" class="bi bi-arrow-left-short"></i>
+                        <i id="right_scrolls" id="right_scroll" class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <li>
+                        <img src="xamdam.jpg" alt="Xamdam Sobirov Jagira" title="Xamdam Sobirov">
+                    </li>
+                    <li>
+                        <img src="jaloliddin.jpg" alt="Jaloliddin Ahmadaliyev" title="Jaloliddin Ahmadaliyev">
+                    </li>
+                    <li>
+                        <img src="gulinur.jpg" alt="Mirjalol Ne'matov" title="Gulinur">
+                    </li>
+                    <li>
+                        <img src="ozoda.jpg" alt="Java Dunyo seni tog'angmas" title="Ozoda Nursaidova">
+                    </li>
+                    <li>
+                        <img src="java.jpg" alt="Java" title="Java">
+                    </li>
+                    <li>
+                        <img src="jasur.jpg" alt="Xamdam Sobirov Jagira" title="Jasurbek Mirzajonov">
+                    </li>
+                    <li>
+                        <img src="mirjalol.jpg" alt="Gulinur Yuragimni Yaraladi" title="Mirjalol Ne'matov">
+                    </li>
+                    <li>
+                        <img src="uzmirMira.jpg" alt="Xamdam Sobirov Daydib" title="Uzmir Mira">
+                    </li>
+                    <li>
+                        <img src="axror.jpg" alt="Jasurbek Mirzajonov" title="Axror Bahshi">
+                    </li>
+                    <li>
+                        <img src="xamdaydib.jpg" alt="Axror Baxshi axror baxshi Musofir musofir musofirda Musofirda" title="Xamdam Sobirov">
+                    </li>
+                    <li>
+                        <img src="osman.jpg" alt="Axror Baxshi axror baxshi Musofir musofir musofirda Musofirda" title="Osman Navruzov">
+                    </li>
+                    <li>
+                        <img src="muhammadziyo.jpg" alt="Axror Baxshi axror baxshi Musofir musofir musofirda Musofirda" title="Muhammadziyo">
+                    </li>
+                    <li>
+                        <img src="mirjalol2.jpg" alt="Axror Baxshi axror baxshi Musofir musofir musofirda Musofirda" title="Mirjalol">
+                    </li>
+
+                    <!-- change all img  -->
+                </div>
+            </div>
+        </div>
+        <div class="master_play">
+            <div class="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="img/1.jpg" alt="Xamdam Sobirov Jagira" id="poster_master_play">
+            <h5 id="title">Jagira (Remix by DJ Asilbek) <br>
+                <div class="subtitle">Xamdam Sobirov</div>
+            </h5>
+            <div class="icon">
+                <i class="bi bi-skip-start-fill" id="back"></i>
+                <i class="bi bi-play-circle" id="masterPlay"></i>
+                <i class="bi bi-skip-end-fill" id="next"></i>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" value="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:00</span>
+
+            <div class="vol" >
+                <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+                <input type="range" id="vol" min="0" value="30" max="100">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- 
+    Images 
+    1-img: Xamdam Sobirov Jagira
+    2-img: Xamdam Sobirov Janze
+    3-img: Mirjalol Ne'matov Sevarami Madina
+    4-img: Yuragimni yaraladi
+    5-img: Gitara
+    6-img: Mirjalol Ne'matov Qo'limda Rubob
+    7-img: Jaloliddin Ahmadaliyev
+    8-img: Jaloliddin Ahmadaliyev Meni Yo'qlab Kelgan Emishsan Yor
+    9-img: Jaloliddin Ahmadaliyev
+    10-img: Uzmir Mira
+    11-img: Axror Bahshi
+    12-img: Osman Navruzov Qolmadi Choram
+    13-img: Jasurbek Mirzajonov Bola bolib qolsaydim
+    14-img: Muhammadziyo Tabibim
+    15-img: Jaloliddin Ahmadaliyev
+    16-img: Xamdam Sobirov
+    17-img: Gulinur
+    18-img: Jaloliddin Ahmadaliyev
+    19-img: Ozoda Nursaidova
+    20-img: Java
+    21-img: Xamdam Sobirov Daydib
+ -->
+
+ <!-- 
+    Audios
+    1-audio: Xamdam Sobirov Jagira
+    2-audio: Xamdam Sobirov Janze
+    3-audio: Mirjalol Ne'matov Sevarami Madina
+    4-audio: Yuragimni yaraladi
+    5-audio: Gitara
+    6-audio: Mirjalol Ne'matov Qo'limda Rubob new
+    7-audio: Jaloliddin Ahmadaliyev Yetmasmidi
+    8-audio: Jaloliddin Ahmadaliyev Meni Yo'qlab Kelgan Emishsan Yor
+    9-audio: Jaloliddin Ahmadaliyev Bevafo dil
+    10-audio: Uzmir Mira Qishlog'imda
+    11-audio: Axror Bahshi Musofrida yurgan akalar
+    12-audio: Osman Navruzov Qolmadi Choram
+    13-audio: Jasurbek Mirzajonov Bola bolib qolsaydim
+    14-audio: feruza egamova janzemande
+    15-audio: Jaloliddin Ahmadaliyev Bilmaysan yor
+    16-audio: Xamdam Sobirov Mayli Yayra
+    17-audio: Java Kirib ketibsan do'st
+    18: Ozoda Nursaidova Ko'k Jiguli
+    19: Boburbek Arapbayev Yonimda Qol
+
+  -->
+
